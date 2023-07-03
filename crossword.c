@@ -1,3 +1,12 @@
+// Remi Andruccioli
+// June 2023
+// Public domain
+//
+// This program finds the biggest square we can draw on a crossword grid,
+// covering only white squares.
+// Interview question.
+//
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -25,21 +34,6 @@ static const bool grid[GRID_LENGTH][GRID_HEIGHT] = {
  /*  9 */ { _, _, _, _, _, _, _, _, _, O },
  /* 10 */ { O, _, _, _, _, O, _, O, _, _ }
 };
-
-//static const bool grid[GRID_LENGTH][GRID_HEIGHT] = {
-//    //   1  2  3  4  5  6  7  8  9  10
-//    /*  1 */ { _, _, _, _, _, _, _, _, _, _ },
-//    /*  2 */ { _, _, _, _, O, _, _, _, _, _ },
-//    /*  3 */ { _, _, _, _, _, _, _, _, _, _ },
-//    /*  4 */ { _, _, _, _, _, _, _, _, _, _ },
-//    /*  5 */ { _, O, _, _, _, _, _, _, _, O },
-//    /*  6 */ { _, _, _, _, _, _, _, _, _, _ },
-//    /*  7 */ { _, _, _, _, _, _, _, _, _, _ },
-//    /*  8 */ { _, _, _, _, _, _, _, _, _, _ },
-//    /*  9 */ { _, _, _, _, _, _, _, _, _, _ },
-//    /* 10 */ { _, _, _, _, _, _, O, _, _, _ }
-//};
-
 
 #undef _
 #undef O
