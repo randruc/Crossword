@@ -56,7 +56,7 @@ contains_black_square(const unsigned int x,
   for (unsigned int i = x, max_i = x + side; i < max_i; ++i) {
     for (unsigned int j = next_j, max_j = *max_y + side; j < max_j; ++j) {
       if (grid[i][j]) {
-        if (j == max_j) {
+        if (j == max_j - 1u) {
           *max_y = j;
           
           return true;
